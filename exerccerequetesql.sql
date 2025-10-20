@@ -106,7 +106,7 @@ recipe.preparation_time DESC;
 	WHERE ingredient.ingredient_name = 'Poulet'; 
 
 /*14*/
-UPDATE recipe.recipe SET preparation_time = preparation_time - 5; 
+	UPDATE recipe.recipe SET preparation_time = preparation_time - 5; 
 
 /*15*/
 	SELECT recipe.recipe_name 
@@ -134,9 +134,9 @@ UPDATE recipe.recipe SET preparation_time = preparation_time - 5;
 
 /*19*/
 ajouter ingrédient:
-INSERT INTO recipe.ingredient (ingredient_name, unity, price) VALUES ('Chocolat Noir', 'g', 5.50); 
+	INSERT INTO recipe.ingredient (ingredient_name, unity, price) VALUES ('Chocolat Noir', 'g', 5.50); 
 lier à la recette:
-INSERT INTO recipe.quantity (quantity, id_ingredient, id_recipe) VALUES (200, 29, 4); 
+	INSERT INTO recipe.quantity (quantity, id_ingredient, id_recipe) VALUES (200, 29, 4); 
 
 /*20*/
 SELECT
